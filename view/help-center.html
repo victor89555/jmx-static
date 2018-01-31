@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>美相地图</title>
+    <title>帮助中心</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     
-    <link rel="stylesheet" href="../css/jmxmap.css">
+    <link rel="stylesheet" href="../css/helpcenter.css">
 </head>
 <body>
 
@@ -74,42 +74,64 @@
     </div>
 </header>
 
-<main class="container-fluid">
-    <!-- JMX Map -->
-    <div class="jmx-map container">
-        <div class="shop-list-box">
-            <div class="shop-area">
-                <span class="icon-index"></span>
-                <span>中国</span>
-                <span>.</span>
-                <span>太原</span>
-            </div>
-            <div class="shop-addr">北美新天地N1艺术购物中心</div>
-            <div class="shop-list-box-pic">
-                <img src="../img/jmx-map-pic.png">
-            </div>
-            <div class="page-control">
-                <a href="javascript:;" class="btn-prov"></a>
-                <span class="page-info"><span style="color: #881d27;">3</span> of <span>3</span></span>
-                <a href="javascript:;" class="btn-next disabled"></a>
-            </div>
-            <div class="notify">
-                <p>其他店正在陆续开业中......</p>
+<main class="container-fluid" style="background-color: #f0f0f0;">
+    <!-- Headlines -->
+    <div class="headlines container">帮助中心</div>
+    
+    <!-- Help Center -->
+    <div class="help-center container">
+        <div class="common-problem">
+            <p class="title">
+                <i class="icon"></i>
+                <span>常见问题</span>
+            </p>
+            <div class="subtitle">可在下方搜索您想要了解的信息</div>
+            <div class="problem-list">
+                <a href="javascript:;">1、使用金美相美颜养肤丽参胶后可以不清洗直接睡觉吗？</a>
+                <a href="javascript:;">2、一般敷雪颜贴的频率是一周多少次？</a>
+                <a href="javascript:;">3、金美相花仙双效修复时光凝露与一般化妆水有什么区别？</a>
+                <a href="javascript:;">4、我的角质层很薄可以使用金美相马卡龙净净清肤套装吗？</a>
+                <a href="javascript:;">5、敏感性肌肤可以用金美相的产品吗？</a>
             </div>
         </div>
-        <div class="index-list">
-            <a href="javascript:;" class="index-item active" style="top:245px; right:100px">
-                <i class="icon-position"></i>
-                <span class="area-name">中国</span>
-            </a>
-            <a href="javascript:;" class="index-item" style="top:345px; right:125px">
-                <i class="icon-position"></i>
-                <span class="area-name">马来西亚</span>
-            </a>
-            <a href="javascript:;" class="index-item" style="top:220px; right:360px">
-                <i class="icon-position"></i>
-                <span class="area-name">西班牙</span>
-            </a>
+        <div class="mail-serve">
+            <p class="title">
+                <i class="icon"></i>
+                <span>邮件服务</span>
+            </p>
+            <div class="subtitle">
+                <p>如有任何问题，请给我们发送电子文件</p>
+                <p>我们会尽快回复您的咨询</p>
+            </div>
+            <div class="mail-form">
+                <div class="form-inline">
+                    <label for="mname">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</label>
+                    <input id="mname" type="text">
+                </div>
+                <div class="form-inline">
+                    <label for="mmail">电子邮箱</label>
+                    <input id="mmail" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="mreason">写邮件的原因<span>（请详细说明）</span></label>
+                    <textarea id="mreason"></textarea>
+                </div>
+            </div>
+            <div class="btn-group">
+                <a class="submit" href="javascript:;">提&nbsp;&nbsp;&nbsp;交</a>
+            </div>
+        </div>
+        <div class="telephony-support">
+            <p class="title">
+                <i class="icon"></i>
+                <span>电话服务</span>
+            </p>
+            <div class="subtitle">
+                <p>如有任何问题，请联系金美相客服人员</p>
+                <p>我们将为您解答相关疑惑</p>
+            </div>
+            <div class="title1">金美相服务电话：</div>
+            <div class="title2">400-869-8695</div>
         </div>
     </div>
 </main>
@@ -153,11 +175,6 @@
 </footer>
 
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-<script>
-    $('.index-item').on('click',function(){
-        $(this).addClass('active').siblings().removeClass('active')
-    })
-</script>
 <script src="../js/header.js"></script>
 <script src="../js/footer.js"></script>
 </body>

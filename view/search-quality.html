@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>美相地图</title>
+    <title>搜索-正品</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     
-    <link rel="stylesheet" href="../css/jmxmap.css">
+    <link rel="stylesheet" href="../css/search.css">
 </head>
 <body>
 
@@ -75,41 +75,13 @@
 </header>
 
 <main class="container-fluid">
-    <!-- JMX Map -->
-    <div class="jmx-map container">
-        <div class="shop-list-box">
-            <div class="shop-area">
-                <span class="icon-index"></span>
-                <span>中国</span>
-                <span>.</span>
-                <span>太原</span>
+    <div class="banner container"></div>
+    <div class="search-btn-group container">
+        <div class="searchbox">
+            <div class="search-content">
+                <input type="text" placeholder="请输入产品防伪帖后的数字">
             </div>
-            <div class="shop-addr">北美新天地N1艺术购物中心</div>
-            <div class="shop-list-box-pic">
-                <img src="../img/jmx-map-pic.png">
-            </div>
-            <div class="page-control">
-                <a href="javascript:;" class="btn-prov"></a>
-                <span class="page-info"><span style="color: #881d27;">3</span> of <span>3</span></span>
-                <a href="javascript:;" class="btn-next disabled"></a>
-            </div>
-            <div class="notify">
-                <p>其他店正在陆续开业中......</p>
-            </div>
-        </div>
-        <div class="index-list">
-            <a href="javascript:;" class="index-item active" style="top:245px; right:100px">
-                <i class="icon-position"></i>
-                <span class="area-name">中国</span>
-            </a>
-            <a href="javascript:;" class="index-item" style="top:345px; right:125px">
-                <i class="icon-position"></i>
-                <span class="area-name">马来西亚</span>
-            </a>
-            <a href="javascript:;" class="index-item" style="top:220px; right:360px">
-                <i class="icon-position"></i>
-                <span class="area-name">西班牙</span>
-            </a>
+            <a href="javascript:;" class="search-btn">查询</a>
         </div>
     </div>
 </main>
@@ -153,11 +125,6 @@
 </footer>
 
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-<script>
-    $('.index-item').on('click',function(){
-        $(this).addClass('active').siblings().removeClass('active')
-    })
-</script>
 <script src="../js/header.js"></script>
 <script src="../js/footer.js"></script>
 </body>

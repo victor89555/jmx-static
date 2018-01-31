@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>美相地图</title>
+    <title>帮助中心-详情</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     
-    <link rel="stylesheet" href="../css/jmxmap.css">
+    <link rel="stylesheet" href="../css/helpcenter.css">
 </head>
 <body>
 
@@ -75,42 +75,14 @@
 </header>
 
 <main class="container-fluid">
-    <!-- JMX Map -->
-    <div class="jmx-map container">
-        <div class="shop-list-box">
-            <div class="shop-area">
-                <span class="icon-index"></span>
-                <span>中国</span>
-                <span>.</span>
-                <span>太原</span>
-            </div>
-            <div class="shop-addr">北美新天地N1艺术购物中心</div>
-            <div class="shop-list-box-pic">
-                <img src="../img/jmx-map-pic.png">
-            </div>
-            <div class="page-control">
-                <a href="javascript:;" class="btn-prov"></a>
-                <span class="page-info"><span style="color: #881d27;">3</span> of <span>3</span></span>
-                <a href="javascript:;" class="btn-next disabled"></a>
-            </div>
-            <div class="notify">
-                <p>其他店正在陆续开业中......</p>
-            </div>
-        </div>
-        <div class="index-list">
-            <a href="javascript:;" class="index-item active" style="top:245px; right:100px">
-                <i class="icon-position"></i>
-                <span class="area-name">中国</span>
-            </a>
-            <a href="javascript:;" class="index-item" style="top:345px; right:125px">
-                <i class="icon-position"></i>
-                <span class="area-name">马来西亚</span>
-            </a>
-            <a href="javascript:;" class="index-item" style="top:220px; right:360px">
-                <i class="icon-position"></i>
-                <span class="area-name">西班牙</span>
-            </a>
-        </div>
+    <!-- Headlines -->
+    <div class="headlines container">帮助中心</div>
+    
+    <!-- Help Center -->
+    <div class="help-center-detail container">
+        <h1>1、使用金美相雪颜养肤丽参胶后可以不清洗直接睡觉吗？</h1>
+        <p>丽参胶是一款睡眠面膜，可以不清洗直接入睡。但如果您是敏感肌肤或者油性肌肤或者在温度较高的地方建议您清洗并搭配后续护肤产品。丽参胶营养成分高、肌肤吸收高，敏感肌肤或油性肌肤不清洗直接入睡，容易产生粘稠感或直接爆痘。</p>
+        <img src="../img/picture.png">
     </div>
 </main>
 
@@ -153,11 +125,6 @@
 </footer>
 
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-<script>
-    $('.index-item').on('click',function(){
-        $(this).addClass('active').siblings().removeClass('active')
-    })
-</script>
 <script src="../js/header.js"></script>
 <script src="../js/footer.js"></script>
 </body>

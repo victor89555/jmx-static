@@ -1,0 +1,170 @@
+main .headlines {
+  height: 80px;
+  line-height: 80px;
+  background-image: url("../img/title.png");
+  background-repeat: no-repeat;
+  background-size: 1200px 80px;
+  background-position: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+main .help-center {
+  margin-bottom: 30px;
+}
+main .help-center > div {
+  float: left;
+  width: 390px;
+  height: 550px;
+  background-color: #ffffff;
+  padding: 40px 40px 0;
+  box-sizing: border-box;
+}
+main .help-center > div > .title {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 24px;
+  color: #881d27;
+}
+main .help-center > div > .title > i.icon {
+  display: inline-block;
+  width: 55px;
+  height: 40px;
+  background-position: center;
+  background-size: 55px 32px;
+  background-repeat: no-repeat;
+}
+main .help-center > div > .title > span {
+  position: relative;
+  top: -12px;
+}
+main .help-center > div > .subtitle {
+  text-align: center;
+  font-size: 13px;
+  color: #888888;
+  padding: 20px 0;
+  min-height: 40px;
+  line-height: 20px;
+}
+main .help-center > div > .problem-list > a {
+  display: block;
+  padding: 5px 0;
+  line-height: 30px;
+  font-size: 16px;
+  color: #333333;
+  border-bottom: 1px solid #881d27;
+  text-align: justify;
+}
+main .help-center > div > .problem-list > a:hover {
+  text-decoration: underline;
+}
+main .help-center > div.common-problem > .title > i.icon {
+  background-image: url("../img/common_problem.png");
+}
+main .help-center > div.mail-serve {
+  margin-left: 15px;
+}
+main .help-center > div.mail-serve > .title > i.icon {
+  background-image: url("../img/mail_serve.png");
+}
+main .help-center > div.mail-serve .mail-form label {
+  font-size: 16px;
+  color: #333333;
+}
+main .help-center > div.mail-serve .mail-form .form-inline {
+  width: 100%;
+  display: flex;
+  height: 30px;
+  line-height: 30px;
+  padding: 10px 0;
+}
+main .help-center > div.mail-serve .mail-form .form-inline label {
+  display: inline-block;
+  width: 66px;
+  padding: 0 5px;
+  text-align: justify;
+}
+main .help-center > div.mail-serve .mail-form .form-inline input {
+  flex: 1;
+  border: 1px solid #dddddd;
+  padding: 0 5px;
+  font-size: 16px;
+}
+main .help-center > div.mail-serve .mail-form .form-group label {
+  display: block;
+  height: 30px;
+  padding: 10px 0;
+}
+main .help-center > div.mail-serve .mail-form .form-group label span {
+  color: #bbbbbb;
+}
+main .help-center > div.mail-serve .mail-form .form-group textarea {
+  width: 100%;
+  height: 160px;
+  border: 1px solid #dddddd;
+  resize: none;
+  padding: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+main .help-center > div.mail-serve .btn-group {
+  margin-top: 10px;
+  text-align: center;
+}
+main .help-center > div.mail-serve .btn-group a.submit {
+  display: inline-block;
+  width: 140px;
+  height: 40px;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  color: #333333;
+}
+main .help-center > div.telephony-support {
+  margin-left: 15px;
+}
+main .help-center > div.telephony-support > .title > i.icon {
+  background-image: url("../img/telephony_support.png");
+}
+main .help-center > div.telephony-support .title1 {
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  color: #333333;
+  text-align: center;
+  margin-top: 80px;
+}
+main .help-center > div.telephony-support .title2 {
+  height: 40px;
+  line-height: 40px;
+  font-size: 30px;
+  color: #881d27;
+  text-align: center;
+  margin-top: 26px;
+}
+main .help-center-detail {
+  margin-bottom: 30px;
+}
+main .help-center-detail h1 {
+  font-size: 24px;
+  height: 50px;
+  line-height: 50px;
+  color: #881d27;
+  font-weight: 500;
+}
+main .help-center-detail p {
+  line-height: 30px;
+  font-size: 16px;
+  color: #333333;
+  padding: 20px 0;
+}
+main .help-center-detail img {
+  display: block;
+  width: 600px;
+  margin: 20px auto;
+}

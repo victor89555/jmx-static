@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>美相地图</title>
+    <title>SGS页面</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     
-    <link rel="stylesheet" href="../css/jmxmap.css">
+    <link rel="stylesheet" href="../css/sgspage.css">
 </head>
 <body>
 
@@ -75,41 +75,37 @@
 </header>
 
 <main class="container-fluid">
-    <!-- JMX Map -->
-    <div class="jmx-map container">
-        <div class="shop-list-box">
-            <div class="shop-area">
-                <span class="icon-index"></span>
-                <span>中国</span>
-                <span>.</span>
-                <span>太原</span>
-            </div>
-            <div class="shop-addr">北美新天地N1艺术购物中心</div>
-            <div class="shop-list-box-pic">
-                <img src="../img/jmx-map-pic.png">
-            </div>
+    <!-- SGS List -->
+    <div class="sgs-list container">
+        <div class="sgs-title">通过国际领先检测机构SGS瑞士通行机构行的糖皮质激素安全检测</div>
+        <div class="sgs-content">
+            <ul class="clearfix">
+                <li class="item1">
+                    <div class="title"><i class="icon"></i><span>雪颜养肤丽参胶</span></div>
+                    <a href="javascript:;" class="page"><img src="../img/sgs.jpg"></a>
+                </li>
+                <li class="item2">
+                    <div class="title"><i class="icon"></i><span>植草缮肌雪颜贴</span></div>
+                    <a href="javascript:;" class="page"><img src="../img/sgs.jpg"></a>
+                </li>
+                <li class="item3">
+                    <div class="title"><i class="icon"></i><span>雪颜净容膏</span></div>
+                    <a href="javascript:;" class="page"><img src="../img/sgs.jpg"></a>
+                </li>
+                <li class="item4">
+                    <div class="title"><i class="icon"></i><span>马卡龙净净清肤面膜霜</span></div>
+                    <a href="javascript:;" class="page"><img src="../img/sgs.jpg"></a>
+                </li>
+                <li class="item5">
+                    <div class="title"><i class="icon"></i><span>花仙美目臻颜双效面霜</span></div>
+                    <a href="javascript:;" class="page"><img src="../img/sgs.jpg"></a>
+                </li>
+            </ul>
             <div class="page-control">
                 <a href="javascript:;" class="btn-prov"></a>
                 <span class="page-info"><span style="color: #881d27;">3</span> of <span>3</span></span>
                 <a href="javascript:;" class="btn-next disabled"></a>
             </div>
-            <div class="notify">
-                <p>其他店正在陆续开业中......</p>
-            </div>
-        </div>
-        <div class="index-list">
-            <a href="javascript:;" class="index-item active" style="top:245px; right:100px">
-                <i class="icon-position"></i>
-                <span class="area-name">中国</span>
-            </a>
-            <a href="javascript:;" class="index-item" style="top:345px; right:125px">
-                <i class="icon-position"></i>
-                <span class="area-name">马来西亚</span>
-            </a>
-            <a href="javascript:;" class="index-item" style="top:220px; right:360px">
-                <i class="icon-position"></i>
-                <span class="area-name">西班牙</span>
-            </a>
         </div>
     </div>
 </main>
@@ -152,13 +148,21 @@
     </div>
 </footer>
 
+<div id="show-pic" class="show-pic">
+    <div class="mask"></div>
+    <img>
+</div>
+
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-<script>
-    $('.index-item').on('click',function(){
-        $(this).addClass('active').siblings().removeClass('active')
-    })
-</script>
 <script src="../js/header.js"></script>
 <script src="../js/footer.js"></script>
+<script>
+    $(".sgs-content>ul>li>a>img").on('click',function(){
+        $("#show-pic").show().find('img').attr('src', $(this).attr('src'));
+    })
+    $('#show-pic .mask').on('click',function(){
+        $('#show-pic').hide();
+    })
+</script>
 </body>
 </html>
