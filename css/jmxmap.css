@@ -1,0 +1,211 @@
+main .jmx-map {
+  height: 660px;
+  background-image: url("../img/jmx-map-bk.png");
+  background-size: 1200px 660px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main .jmx-map .shop-list-box {
+  float: left;
+  width: 440px;
+  height: 620px;
+  padding-top: 40px;
+}
+main .jmx-map .shop-list-box .shop-area {
+  text-align: center;
+  font-size: 20px;
+  color: #881d27;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+}
+main .jmx-map .shop-list-box .shop-area .icon-index {
+  display: inline-block;
+  width: 16px;
+  height: 22px;
+  background-image: url("../img/jmx-map-index.png");
+  background-position: center;
+  background-size: 16px 22px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 3px;
+}
+main .jmx-map .shop-list-box .shop-addr {
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+main .jmx-map .shop-list-box .shop-list-box-pic {
+  margin-bottom: 16px;
+}
+main .jmx-map .shop-list-box .shop-list-box-pic > img {
+  width: 440px;
+  height: 274px;
+}
+main .jmx-map .shop-list-box .page-control {
+  position: relative;
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+main .jmx-map .shop-list-box .page-control .btn-prov,
+main .jmx-map .shop-list-box .page-control .btn-next {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #e7d2d4;
+  position: absolute;
+}
+main .jmx-map .shop-list-box .page-control .btn-prov {
+  left: 80px;
+}
+main .jmx-map .shop-list-box .page-control .btn-prov::before,
+main .jmx-map .shop-list-box .page-control .btn-prov::after {
+  display: block;
+  content: '';
+  width: 0px;
+  height: 0px;
+  border: 20px solid transparent;
+  position: absolute;
+  top: 14px;
+  left: 8px;
+}
+main .jmx-map .shop-list-box .page-control .btn-prov::before {
+  border-right-color: #ffffff;
+  left: 2px;
+}
+main .jmx-map .shop-list-box .page-control .btn-prov::after {
+  border-right-color: #e7d2d4;
+}
+main .jmx-map .shop-list-box .page-control .btn-prov:hover {
+  background: #f3dddf;
+}
+main .jmx-map .shop-list-box .page-control .btn-prov:hover::after {
+  border-right-color: #f3dddf;
+}
+main .jmx-map .shop-list-box .page-control .btn-prov:active {
+  background: #d7c3c5;
+}
+main .jmx-map .shop-list-box .page-control .btn-prov:active::after {
+  border-right-color: #d7c3c5;
+}
+main .jmx-map .shop-list-box .page-control .btn-prov.disabled {
+  background: #dddddd;
+}
+main .jmx-map .shop-list-box .page-control .btn-prov.disabled::after {
+  border-right-color: #dddddd;
+}
+main .jmx-map .shop-list-box .page-control .btn-next {
+  right: 80px;
+}
+main .jmx-map .shop-list-box .page-control .btn-next::before,
+main .jmx-map .shop-list-box .page-control .btn-next::after {
+  display: block;
+  content: '';
+  width: 0px;
+  height: 0px;
+  border: 20px solid transparent;
+  position: absolute;
+  top: 14px;
+  right: 8px;
+}
+main .jmx-map .shop-list-box .page-control .btn-next::before {
+  border-left-color: #ffffff;
+  right: 2px;
+}
+main .jmx-map .shop-list-box .page-control .btn-next::after {
+  border-left-color: #e7d2d4;
+}
+main .jmx-map .shop-list-box .page-control .btn-next:hover {
+  background: #f3dddf;
+}
+main .jmx-map .shop-list-box .page-control .btn-next:hover::after {
+  border-left-color: #f3dddf;
+}
+main .jmx-map .shop-list-box .page-control .btn-next:active {
+  background: #d7c3c5;
+}
+main .jmx-map .shop-list-box .page-control .btn-next:active::after {
+  border-left-color: #d7c3c5;
+}
+main .jmx-map .shop-list-box .page-control .btn-next.disabled {
+  background: #dddddd;
+}
+main .jmx-map .shop-list-box .page-control .btn-next.disabled::after {
+  border-left-color: #dddddd;
+}
+main .jmx-map .shop-list-box .notify {
+  margin-top: 40px;
+}
+main .jmx-map .shop-list-box .notify > p {
+  line-height: 50px;
+  color: #e7d2d4;
+  font-size: 21px;
+  text-align: center;
+  font-weight: 600;
+}
+main .jmx-map .index-list {
+  width: 760px;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+main .jmx-map .index-list .index-item {
+  position: absolute;
+  overflow: visible;
+}
+main .jmx-map .index-list .index-item .icon-position {
+  display: inline-block;
+  width: 30px;
+  height: 18px;
+  background-image: url("../img/icon1.png");
+  background-repeat: no-repeat;
+  background-size: 30px 18px;
+  background-position: center;
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  margin-left: -15px;
+}
+main .jmx-map .index-list .index-item .icon-position::before,
+main .jmx-map .index-list .index-item .icon-position::after {
+  display: block;
+  content: '';
+  border-radius: 50%;
+  background-color: rgba(136, 29, 39, 0.2);
+  position: absolute;
+  transition: all 0.5s;
+}
+main .jmx-map .index-list .index-item .icon-position::before {
+  width: 0px;
+  height: 0px;
+  top: 10px;
+  left: 15px;
+}
+main .jmx-map .index-list .index-item .icon-position::after {
+  width: 0px;
+  height: 0px;
+  top: 10px;
+  left: 15px;
+}
+main .jmx-map .index-list .index-item.active .icon-position::before {
+  width: 130px;
+  height: 130px;
+  top: -53px;
+  left: -49px;
+}
+main .jmx-map .index-list .index-item.active .icon-position::after {
+  width: 70px;
+  height: 70px;
+  top: -23px;
+  left: -19px;
+}
+main .jmx-map .index-list .index-item .area-name {
+  color: #881d27;
+}

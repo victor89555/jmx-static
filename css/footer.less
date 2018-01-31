@@ -1,0 +1,166 @@
+footer {
+    border-top: 2px solid #dddddd;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-top: 90px;
+    background: #FFFFFF;
+    .left-bar {
+        width: 900px;
+        float: left;
+        .info {
+            &>li {
+                float: left;
+                margin-right: 40px;
+                color: #666666;
+                font-size: 14px;
+                line-height: 30px;
+                a{ color: #666666;}
+            }
+        }
+        .pic-link {
+            margin-top: 10px;
+            &>a {
+                margin-right: 20px;
+                &>img {
+                    width: 42px;
+                    height: 44px;
+                }
+            }
+        }
+    }
+    .right-bar {
+        width: 300px;
+        float: left;
+
+        &>li{
+            float: left;
+            position: relative;
+
+            .weibo-link,
+            .weixin-link,
+            .langulage {
+                float: left;
+                display: inline-block;
+                position: relative;
+            }
+            .weibo-link,
+            .weixin-link {
+                width: 37px;
+                height: 31px;
+                margin-right: 30px;
+                background-size: 37px 31px;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .weibo-link {
+                background-image: url("../img/weibo-gray.png");
+            }
+            .weixin-link {
+                background-image: url("../img/weixin-gray.png");
+            }
+            .langulage {
+                width: 120px;
+                height: 24px;
+                line-height: 24px;
+                font-size: 16px;
+                color: #888888;
+                text-align: center;
+                border-left: 1px solid #dddddd;
+                margin-top: 3px;
+                position: relative;
+
+                &::before,&::after {
+                    display: inline-block;
+                    content: '';
+                    border: 8px solid transparent;
+                    border-top: 8px solid #fff;
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    top: 7px;
+                    right: 0px;
+                }
+                &::before {
+                    border-top-color: #888888;
+                    top: 8px;
+                }
+
+                &.active {
+                    &::before, &::after {
+                        border: 8px solid transparent;
+                        border-bottom: 8px solid #fff;
+                        top: 0px;
+                    }
+                    &::before {
+                        border-bottom-color: #888888;
+                        top: -1px;
+                    }
+                }
+            }
+
+            .wb-code,.wx-code {
+                position: absolute;
+                bottom: 68px;
+                left: -50px;
+                width: 128px;
+                height: 128px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 128px;
+                border: 1px solid #dddddd;
+
+                &::before, &::after {
+                    content: ' ';
+                    width: 0;
+                    height: 0;
+                    border: solid transparent;
+                    position: absolute;
+                }
+
+                &::before {
+                    border-width: 14px;
+                    border-top-color: #dddddd;
+                    left: 50px;
+                    bottom: -28px;
+                }
+                &::after {
+                    border-width: 12px;
+                    border-top-color: #ffffff;
+                    left: 52px;
+                    bottom: -24px;
+                }
+            }
+            .wb-code {
+                background-image: url("../img/wb-code.png");
+            }
+            .wx-code {
+                background-image: url("../img/wx-code.png");
+            }
+
+            .langulage-list {
+                position: absolute;
+                width: 180px;
+                left: -28px;
+                bottom: 48px;
+                border: 1px solid #dddddd;
+                background-color: #ffffff;
+                &>li {
+                    &:hover {
+                        background: #808080;
+                        &>a{color: #FFFFFF;}
+                    }
+                    &>a {
+                        display: block;
+                        height: 36px;
+                        line-height: 36px;
+                        font-size: 14px;
+                        text-align: center;
+                    }
+
+                    &+li{border-top: 1px solid #ddd;}
+                }
+            }
+        }
+
+    }
+}
