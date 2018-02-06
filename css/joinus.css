@@ -1,0 +1,17 @@
+main .content {
+  height: 700px;
+}
+main .content .left-side {
+  width: 620px;
+  height: 700px;
+  float: left;
+}
+main .content .right-side {
+  width: 512px;
+  height: 700px;
+  float: right;
+  background-image: url("../img/join-us.png");
+  background-size: 512px 642px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
