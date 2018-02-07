@@ -4,7 +4,31 @@ main .content {
 main .content .left-side {
   width: 620px;
   height: 700px;
+  padding-top: 50px;
+  box-sizing: border-box;
   float: left;
+}
+main .content .left-side .fun {
+  width: 620px;
+  height: 300px;
+  background-image: url("../img/jmx-fan.png");
+  background-repeat: no-repeat;
+  background-size: 426px 215px;
+  background-position: center;
+}
+main .content .left-side .detail {
+  font-size: 16px;
+  color: #666666;
+  text-align: justify;
+}
+main .content .left-side .connect {
+  font-size: 26px;
+  color: #881d27;
+  text-align: center;
+  padding-top: 86px;
+}
+main .content .left-side .connect p.phone {
+  font-size: 28px;
 }
 main .content .right-side {
   width: 512px;

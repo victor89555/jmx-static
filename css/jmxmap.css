@@ -53,7 +53,7 @@ main .jmx-map .shop-list-box .page-control {
   margin-bottom: 16px;
   font-size: 16px;
 }
-main .jmx-map .shop-list-box .page-control .btn-prov,
+main .jmx-map .shop-list-box .page-control .btn-prev,
 main .jmx-map .shop-list-box .page-control .btn-next {
   display: inline-block;
   width: 70px;
@@ -62,11 +62,11 @@ main .jmx-map .shop-list-box .page-control .btn-next {
   background: #e7d2d4;
   position: absolute;
 }
-main .jmx-map .shop-list-box .page-control .btn-prov {
+main .jmx-map .shop-list-box .page-control .btn-prev {
   left: 80px;
 }
-main .jmx-map .shop-list-box .page-control .btn-prov::before,
-main .jmx-map .shop-list-box .page-control .btn-prov::after {
+main .jmx-map .shop-list-box .page-control .btn-prev::before,
+main .jmx-map .shop-list-box .page-control .btn-prev::after {
   display: block;
   content: '';
   width: 0px;
@@ -76,29 +76,29 @@ main .jmx-map .shop-list-box .page-control .btn-prov::after {
   top: 14px;
   left: 8px;
 }
-main .jmx-map .shop-list-box .page-control .btn-prov::before {
+main .jmx-map .shop-list-box .page-control .btn-prev::before {
   border-right-color: #ffffff;
   left: 2px;
 }
-main .jmx-map .shop-list-box .page-control .btn-prov::after {
+main .jmx-map .shop-list-box .page-control .btn-prev::after {
   border-right-color: #e7d2d4;
 }
-main .jmx-map .shop-list-box .page-control .btn-prov:hover {
+main .jmx-map .shop-list-box .page-control .btn-prev:hover {
   background: #f3dddf;
 }
-main .jmx-map .shop-list-box .page-control .btn-prov:hover::after {
+main .jmx-map .shop-list-box .page-control .btn-prev:hover::after {
   border-right-color: #f3dddf;
 }
-main .jmx-map .shop-list-box .page-control .btn-prov:active {
+main .jmx-map .shop-list-box .page-control .btn-prev:active {
   background: #d7c3c5;
 }
-main .jmx-map .shop-list-box .page-control .btn-prov:active::after {
+main .jmx-map .shop-list-box .page-control .btn-prev:active::after {
   border-right-color: #d7c3c5;
 }
-main .jmx-map .shop-list-box .page-control .btn-prov.disabled {
+main .jmx-map .shop-list-box .page-control .btn-prev.disabled {
   background: #dddddd;
 }
-main .jmx-map .shop-list-box .page-control .btn-prov.disabled::after {
+main .jmx-map .shop-list-box .page-control .btn-prev.disabled::after {
   border-right-color: #dddddd;
 }
 main .jmx-map .shop-list-box .page-control .btn-next {

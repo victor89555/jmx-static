@@ -1,0 +1,132 @@
+main .bread-crumb-nav {
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  border-bottom: 1px solid #881d27;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+main .bread-crumb-nav > li {
+  float: left;
+  padding: 0 2px;
+}
+main .bread-crumb-nav > li a {
+  color: #666666;
+}
+main .the-brand-footprint > .item {
+  display: block;
+  width: 350px;
+  height: 420px;
+  float: left;
+  margin-right: 75px;
+}
+main .the-brand-footprint > .item:nth-child(3n) {
+  margin-right: 0;
+}
+main .the-brand-footprint > .item .item-img {
+  width: 350px;
+  height: 260px;
+}
+main .the-brand-footprint > .item .item-img img {
+  width: 350px;
+  height: 260px;
+}
+main .the-brand-footprint > .item .item-title {
+  margin-top: 30px;
+  font-size: 22px;
+  color: #333333;
+  text-align: center;
+}
+main .pagebox {
+  font-size: 16px;
+  text-align: center;
+  height: 27px;
+  line-height: 27px;
+  margin-bottom: 80px;
+}
+main .pagebox span {
+  display: inline-block;
+  height: 27px;
+  line-height: 27px;
+}
+main .pagebox a.prev,
+main .pagebox a.next {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-color: #c8c8c8;
+  position: relative;
+  top: 7px;
+}
+main .pagebox a.prev::before,
+main .pagebox a.prev::after {
+  display: block;
+  content: '';
+  width: 0px;
+  height: 0px;
+  border: 10px solid transparent;
+  position: absolute;
+  top: 3px;
+  left: 0px;
+}
+main .pagebox a.prev::before {
+  border-right-color: #ffffff;
+  left: -2px;
+}
+main .pagebox a.prev::after {
+  border-right-color: #c8c8c8;
+}
+main .pagebox a.prev:hover {
+  background: #f3dddf;
+}
+main .pagebox a.prev:hover::after {
+  border-right-color: #f3dddf;
+}
+main .pagebox a.prev:active {
+  background: #d7c3c5;
+}
+main .pagebox a.prev:active::after {
+  border-right-color: #d7c3c5;
+}
+main .pagebox a.prev.disabled {
+  background: #dddddd;
+}
+main .pagebox a.prev.disabled::after {
+  border-right-color: #dddddd;
+}
+main .pagebox a.next::before,
+main .pagebox a.next::after {
+  display: block;
+  content: '';
+  width: 0px;
+  height: 0px;
+  border: 10px solid transparent;
+  position: absolute;
+  top: 3px;
+  right: 0px;
+}
+main .pagebox a.next::before {
+  border-left-color: #ffffff;
+  right: -2px;
+}
+main .pagebox a.next::after {
+  border-left-color: #c8c8c8;
+}
+main .pagebox a.next:hover {
+  background: #f3dddf;
+}
+main .pagebox a.next:hover::after {
+  border-left-color: #f3dddf;
+}
+main .pagebox a.next:active {
+  background: #d7c3c5;
+}
+main .pagebox a.next:active::after {
+  border-left-color: #d7c3c5;
+}
+main .pagebox a.next.disabled {
+  background: #dddddd;
+}
+main .pagebox a.next.disabled::after {
+  border-left-color: #dddddd;
+}

@@ -76,7 +76,7 @@ main .sgs-list .sgs-content .page-control {
   right: 0;
   bottom: 50px;
 }
-main .sgs-list .sgs-content .page-control .btn-prov,
+main .sgs-list .sgs-content .page-control .btn-prev,
 main .sgs-list .sgs-content .page-control .btn-next {
   display: inline-block;
   width: 70px;
@@ -85,11 +85,11 @@ main .sgs-list .sgs-content .page-control .btn-next {
   background: #e7d2d4;
   position: absolute;
 }
-main .sgs-list .sgs-content .page-control .btn-prov {
+main .sgs-list .sgs-content .page-control .btn-prev {
   left: 40px;
 }
-main .sgs-list .sgs-content .page-control .btn-prov::before,
-main .sgs-list .sgs-content .page-control .btn-prov::after {
+main .sgs-list .sgs-content .page-control .btn-prev::before,
+main .sgs-list .sgs-content .page-control .btn-prev::after {
   display: block;
   content: '';
   width: 0px;
@@ -99,29 +99,29 @@ main .sgs-list .sgs-content .page-control .btn-prov::after {
   top: 14px;
   left: 8px;
 }
-main .sgs-list .sgs-content .page-control .btn-prov::before {
+main .sgs-list .sgs-content .page-control .btn-prev::before {
   border-right-color: #ffffff;
   left: 2px;
 }
-main .sgs-list .sgs-content .page-control .btn-prov::after {
+main .sgs-list .sgs-content .page-control .btn-prev::after {
   border-right-color: #e7d2d4;
 }
-main .sgs-list .sgs-content .page-control .btn-prov:hover {
+main .sgs-list .sgs-content .page-control .btn-prev:hover {
   background: #f3dddf;
 }
-main .sgs-list .sgs-content .page-control .btn-prov:hover::after {
+main .sgs-list .sgs-content .page-control .btn-prev:hover::after {
   border-right-color: #f3dddf;
 }
-main .sgs-list .sgs-content .page-control .btn-prov:active {
+main .sgs-list .sgs-content .page-control .btn-prev:active {
   background: #d7c3c5;
 }
-main .sgs-list .sgs-content .page-control .btn-prov:active::after {
+main .sgs-list .sgs-content .page-control .btn-prev:active::after {
   border-right-color: #d7c3c5;
 }
-main .sgs-list .sgs-content .page-control .btn-prov.disabled {
+main .sgs-list .sgs-content .page-control .btn-prev.disabled {
   background: #dddddd;
 }
-main .sgs-list .sgs-content .page-control .btn-prov.disabled::after {
+main .sgs-list .sgs-content .page-control .btn-prev.disabled::after {
   border-right-color: #dddddd;
 }
 main .sgs-list .sgs-content .page-control .btn-next {
