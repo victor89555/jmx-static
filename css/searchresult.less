@@ -1,0 +1,61 @@
+main {
+  .search-result {
+    margin-bottom: 80px;
+    .result-row {
+      width: 100%;
+      margin-top: 40px;
+      padding-top: 100px;
+      border-top: 1px solid #881d27;
+      .result-item {
+        width: 230px;
+        padding: 0 55px;
+        float: left;
+        .item-img {
+          width: 230px;
+          height: 230px;
+          img {
+            width: 230px;
+            height: 230px;
+          }
+        }
+        .item-title {
+          font-size: 20px;
+          height: 60px;
+          line-height: 60px;
+          color: #881d27;
+          text-align: center;
+        }
+        .item-info {
+          font-size: 16px;
+          color: #555555;
+          text-align: center;
+          height: 70px;
+        }
+        .btn-group {
+          text-align: center;
+          margin-bottom: 20px;
+          a.btn {
+            display: inline-block;
+            width: 140px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #666666;
+            color: #666666;
+            &:hover {
+              background-color: #dcdcdc;
+            }
+            &:active {
+              background-color: #b2b2b2;
+            }
+          }
+        }
+      }
+      .result-item + .result-item {
+        margin-left: 90px;
+      }
+    }
+  }
+}

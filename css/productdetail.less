@@ -77,6 +77,7 @@ main {
         height: 80px;
         line-height: 80px;
         text-align: center;
+        border-bottom: 1px solid #881d27;
       }
 
       &>.list {
@@ -88,9 +89,14 @@ main {
 
           }
           &>.title {
+            display: block;
             font-size: 24px;
             text-align: center;
             line-height: 36px;
+            transition: color linear 0.25s;
+            &:hover {
+              color: rgba(85, 85, 85, 0.5);
+            }
           }
         }
       }

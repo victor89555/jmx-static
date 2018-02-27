@@ -1,0 +1,59 @@
+main .search-result {
+  margin-bottom: 80px;
+}
+main .search-result .result-row {
+  width: 100%;
+  margin-top: 40px;
+  padding-top: 100px;
+  border-top: 1px solid #881d27;
+}
+main .search-result .result-row .result-item {
+  width: 230px;
+  padding: 0 55px;
+  float: left;
+}
+main .search-result .result-row .result-item .item-img {
+  width: 230px;
+  height: 230px;
+}
+main .search-result .result-row .result-item .item-img img {
+  width: 230px;
+  height: 230px;
+}
+main .search-result .result-row .result-item .item-title {
+  font-size: 20px;
+  height: 60px;
+  line-height: 60px;
+  color: #881d27;
+  text-align: center;
+}
+main .search-result .result-row .result-item .item-info {
+  font-size: 16px;
+  color: #555555;
+  text-align: center;
+  height: 70px;
+}
+main .search-result .result-row .result-item .btn-group {
+  text-align: center;
+  margin-bottom: 20px;
+}
+main .search-result .result-row .result-item .btn-group a.btn {
+  display: inline-block;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #666666;
+  color: #666666;
+}
+main .search-result .result-row .result-item .btn-group a.btn:hover {
+  background-color: #dcdcdc;
+}
+main .search-result .result-row .result-item .btn-group a.btn:active {
+  background-color: #b2b2b2;
+}
+main .search-result .result-row .result-item + .result-item {
+  margin-left: 90px;
+}

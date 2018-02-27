@@ -1,21 +1,4 @@
 main {
-  .bread-crumb-nav {
-    height: 50px;
-    line-height: 50px;
-    font-size: 24px;
-    border-bottom: 1px solid #881d27;
-    margin-top: 50px;
-    margin-bottom: 50px;
-
-    &>li {
-      float: left;
-      padding: 0 2px;
-      a {
-        color: #666666;
-      }
-    }
-  }
-
   .the-brand-footprint{
     &>.item {
       display: block;
@@ -46,107 +29,48 @@ main {
     }
   }
 
-  .pagebox{
-    font-size: 16px;
-    text-align: center;
-    height: 27px;
-    line-height: 27px;
-    margin-bottom: 80px;
-    span {
-      display: inline-block;
-      height: 27px;
-      line-height: 27px;
+  .the-brand-footprint-detail {
+    .title {
+      font-size: 30px;
+      color: #666666;
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
 
-    a.prev, a.next {
-      display: inline-block;
-      width: 27px;
-      height: 27px;
-      background-color: #c8c8c8;
-      position: relative;
-      top: 7px;
-
-    }
-    a.prev{
-      &::before, &::after {
-        display: block;
-        content: '';
-        width: 0px;
-        height: 0px;
-        border: 10px solid transparent;
-        position: absolute;
-        top: 3px;
-        left: 0px;
-      }
-      &::before {
-        border-right-color: #ffffff;
-        left: -2px;
-      }
-      &::after {
-        border-right-color: #c8c8c8;
-      }
-
-      &:hover {
-        background: #f3dddf;
-        &::after {
-          border-right-color: #f3dddf;
-        }
-      }
-      &:active {
-        background: #d7c3c5;
-        &::after {
-          border-right-color: #d7c3c5;
-        }
-      }
-      &.disabled {
-        background: #dddddd;
-        &::after {
-          border-right-color: #dddddd;
-        }
-      }
-    }
-    a.next {
-      &::before, &::after {
-        display: block;
-        content: '';
-        width: 0px;
-        height: 0px;
-        border: 10px solid transparent;
-        position: absolute;
-        top: 3px;
-        right: 0px;
-      }
-      &::before {
-        border-left-color: #ffffff;
-        right: -2px;
-      }
-      &::after {
-        border-left-color: #c8c8c8;
-      }
-
-      &:hover {
-        background: #f3dddf;
-        &::after {
-          border-left-color: #f3dddf;
-        }
-      }
-      &:active {
-        background: #d7c3c5;
-        &::after {
-          border-left-color: #d7c3c5;
+    .content {
+      .img-group {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        img + img {
+          margin-left: 18px;
         }
       }
 
-      &.disabled {
-        background: #dddddd;
-        &::after {
-          border-left-color: #dddddd;
-        }
+      &>p {
+        color: #888888;
+        font-size: 16px;
+        text-align: justify;
+        line-height: 30px;
+        margin-top: 10px;
       }
     }
   }
 
-  .the-brand-footprint-detail {
+  .page-list {
+    margin-top: 15px;
+    &>p {
+      font-size: 16px;
+      color: #666666;
+      line-height: 44px;
 
+      a {
+        color: inherit;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }

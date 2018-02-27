@@ -65,6 +65,7 @@ main .product-detail .suggest-collocation > .title {
   height: 80px;
   line-height: 80px;
   text-align: center;
+  border-bottom: 1px solid #881d27;
 }
 main .product-detail .suggest-collocation > .list {
   margin-bottom: 80px;
@@ -74,7 +75,12 @@ main .product-detail .suggest-collocation > .list > .item {
   float: left;
 }
 main .product-detail .suggest-collocation > .list > .item > .title {
+  display: block;
   font-size: 24px;
   text-align: center;
   line-height: 36px;
+  transition: color linear 0.25s;
+}
+main .product-detail .suggest-collocation > .list > .item > .title:hover {
+  color: rgba(85, 85, 85, 0.5);
 }

@@ -1,0 +1,117 @@
+main {
+  .start-product-huaxian {
+    .product-header {
+      padding-top: 30px;
+      padding-bottom: 40px;
+      .flower {
+        width: 110px;
+        height: 110px;
+        background-image: url("../img/star-product-huaxian1.png");
+        background-repeat: no-repeat;
+        background-size: 110px;
+        background-position: center;
+        margin: 0 auto;
+      }
+      .title {
+        width: 500px;
+        height: 56px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        &::before {
+          display: inline-block;
+          content: '';
+          width: 100%;
+          height: 0;
+          border-top: 1px solid #dddddd;
+          position: relative;
+          top: 18px;
+        }
+        span {
+          display: inline-block;
+          width: 170px;
+          height: 56px;
+          line-height: 56px;
+          font-size: 30px;
+          color: #881d27;
+          background-color: #ffffff;
+          position: relative;
+          top: -17px;
+        }
+      }
+    }
+    .product-content {
+      margin-bottom: 164px;
+      .item {
+        height: 470px;
+        &::after {
+          content: '';
+          display: table;
+          clear: both;
+        }
+        &.item-left > div {
+          float: left;
+        }
+        &.item-left > div + div {
+          margin-left: 70px;
+        }
+        &.item-right > div {
+          float: right;
+        }
+        &.item-right > div + div {
+          margin-right: 70px;
+        }
+        .item-img {
+          width: 740px;
+          height: 100%;
+          img {
+            width: 740px;
+            height: 100%;
+          }
+        }
+        .item-detail {
+          width: 390px;
+          height: 100%;
+          padding-top: 130px;
+          box-sizing: border-box;
+          .item-title {
+            font-size: 30px;
+            height: 60px;
+            line-height: 60px;
+            color: #881d27;
+          }
+          .item-info {
+            font-size: 16px;
+            color: #555555;
+            height: 70px;
+            margin-top: 10px;
+          }
+          .btn-group {
+            text-align: center;
+            margin-top: 20px;
+            a.btn {
+              display: inline-block;
+              width: 140px;
+              height: 40px;
+              line-height: 40px;
+              text-align: center;
+              font-size: 14px;
+              border-radius: 5px;
+              border: 1px solid #666666;
+              color: #666666;
+              &:hover {
+                background-color: #dcdcdc;
+              }
+              &:active {
+                background-color: #b2b2b2;
+              }
+            }
+          }
+        }
+      }
+      .item + .item {
+        margin-top: 100px;
+      }
+    }
+  }
+}

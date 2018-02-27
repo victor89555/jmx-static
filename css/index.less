@@ -17,10 +17,61 @@ main {
         margin-bottom: 20px;
         .series {
             .series-item {
+                display: block;
                 float: left;
-                img {
-                    width: 300px;
-                    height: 410px;
+                width: 299px;
+                height: 410px;
+                margin-right: 1px;
+                background-size: 299px 420px;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                &.series1 {
+                    background-image: url("../img/series1.png");
+                }
+                &.series2 {
+                    background-image: url("../img/series2.png");
+                }
+                &.series3 {
+                    background-image: url("../img/series3.png");
+                }
+                &.series4 {
+                    background-image: url("../img/series4.png");
+                }
+
+                &>div {
+                    width: 100%;
+                    height: 100%;
+                    transition: all linear 0.25s;
+                    position: relative;
+                    &>p {
+                        width: 299px;
+                        position: absolute;
+                        text-align: center;
+                        color: rgba(255, 255, 255, 0.4);
+                        transition: color linear 0.25s;
+                        &.title {
+                            width: 100%;
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 24px;
+                            bottom: 42px;
+                        }
+                        &.detail {
+                            width: 100%;
+                            height: 26px;
+                            line-height: 26px;
+                            font-size: 16px;
+                            bottom: 16px;
+                        }
+                    }
+                }
+
+                &:hover>div {
+                    background-color: rgba(0, 0, 0, 0.4);
+                    &>p {
+                        color: rgba(255, 255, 255, 0.9);
+                    }
                 }
             }
         }
@@ -39,7 +90,7 @@ main {
                 margin-left: 70px;
                 font-size: 16px;
                 &>li {
-                    margin-bottom: 20px;
+                    margin-bottom: 16px;
                     height: 29px;
                     line-height: 29px;
                     position: relative;
@@ -60,6 +111,10 @@ main {
                             top: 5px;
                         }
                     }
+                    &.more {
+                        margin-bottom: 0;
+                        text-align: right;
+                    }
                 }
             }
         }
@@ -71,6 +126,18 @@ main {
             width: 1200px;
             height: 614px;
             cursor: pointer;
+        }
+        .vedio-view {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 3000;
+            vedio {
+                position: absolute;
+                z-index: 3001;
+            }
         }
     }
 }

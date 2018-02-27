@@ -13,11 +13,59 @@ main .four-series {
   margin-bottom: 20px;
 }
 main .four-series .series .series-item {
+  display: block;
   float: left;
-}
-main .four-series .series .series-item img {
-  width: 300px;
+  width: 299px;
   height: 410px;
+  margin-right: 1px;
+  background-size: 299px 420px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main .four-series .series .series-item.series1 {
+  background-image: url("../img/series1.png");
+}
+main .four-series .series .series-item.series2 {
+  background-image: url("../img/series2.png");
+}
+main .four-series .series .series-item.series3 {
+  background-image: url("../img/series3.png");
+}
+main .four-series .series .series-item.series4 {
+  background-image: url("../img/series4.png");
+}
+main .four-series .series .series-item > div {
+  width: 100%;
+  height: 100%;
+  transition: all linear 0.25s;
+  position: relative;
+}
+main .four-series .series .series-item > div > p {
+  width: 299px;
+  position: absolute;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  transition: color linear 0.25s;
+}
+main .four-series .series .series-item > div > p.title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 24px;
+  bottom: 42px;
+}
+main .four-series .series .series-item > div > p.detail {
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  font-size: 16px;
+  bottom: 16px;
+}
+main .four-series .series .series-item:hover > div {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+main .four-series .series .series-item:hover > div > p {
+  color: rgba(255, 255, 255, 0.9);
 }
 main .brand-news {
   margin-bottom: 80px;
@@ -33,7 +81,7 @@ main .brand-news .content .title-list {
   font-size: 16px;
 }
 main .brand-news .content .title-list > li {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   height: 29px;
   line-height: 29px;
   position: relative;
@@ -58,6 +106,10 @@ main .brand-news .content .title-list > li.active::before {
   left: -16px;
   top: 5px;
 }
+main .brand-news .content .title-list > li.more {
+  margin-bottom: 0;
+  text-align: right;
+}
 main .vedio-about-jmx {
   margin-bottom: 108px;
 }
@@ -65,4 +117,16 @@ main .vedio-about-jmx .vedio-box {
   width: 1200px;
   height: 614px;
   cursor: pointer;
+}
+main .vedio-about-jmx .vedio-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3000;
+}
+main .vedio-about-jmx .vedio-view vedio {
+  position: absolute;
+  z-index: 3001;
 }

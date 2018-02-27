@@ -165,6 +165,114 @@ textarea {
   font-size: 25px;
   color: #888888;
 }
+.bread-crumb-nav {
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  border-bottom: 1px solid #881d27;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.bread-crumb-nav > li {
+  float: left;
+  padding: 0 2px;
+}
+.bread-crumb-nav > li a {
+  color: #666666;
+}
+.pagebox {
+  font-size: 16px;
+  text-align: center;
+  height: 27px;
+  line-height: 27px;
+  margin-bottom: 80px;
+}
+.pagebox span {
+  display: inline-block;
+  height: 27px;
+  line-height: 27px;
+}
+.pagebox a.prev,
+.pagebox a.next {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-color: #c8c8c8;
+  position: relative;
+  top: 7px;
+}
+.pagebox a.prev::before,
+.pagebox a.prev::after {
+  display: block;
+  content: '';
+  width: 0px;
+  height: 0px;
+  border: 10px solid transparent;
+  position: absolute;
+  top: 3px;
+  left: 0px;
+}
+.pagebox a.prev::before {
+  border-right-color: #ffffff;
+  left: -2px;
+}
+.pagebox a.prev::after {
+  border-right-color: #c8c8c8;
+}
+.pagebox a.prev:hover {
+  background: #f3dddf;
+}
+.pagebox a.prev:hover::after {
+  border-right-color: #f3dddf;
+}
+.pagebox a.prev:active {
+  background: #d7c3c5;
+}
+.pagebox a.prev:active::after {
+  border-right-color: #d7c3c5;
+}
+.pagebox a.prev.disabled {
+  background: #dddddd;
+}
+.pagebox a.prev.disabled::after {
+  border-right-color: #dddddd;
+}
+.pagebox a.next::before,
+.pagebox a.next::after {
+  display: block;
+  content: '';
+  width: 0px;
+  height: 0px;
+  border: 10px solid transparent;
+  position: absolute;
+  top: 3px;
+  right: 0px;
+}
+.pagebox a.next::before {
+  border-left-color: #ffffff;
+  right: -2px;
+}
+.pagebox a.next::after {
+  border-left-color: #c8c8c8;
+}
+.pagebox a.next:hover {
+  background: #f3dddf;
+}
+.pagebox a.next:hover::after {
+  border-left-color: #f3dddf;
+}
+.pagebox a.next:active {
+  background: #d7c3c5;
+}
+.pagebox a.next:active::after {
+  border-left-color: #d7c3c5;
+}
+.pagebox a.next.disabled {
+  background: #dddddd;
+}
+.pagebox a.next.disabled::after {
+  border-left-color: #dddddd;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
