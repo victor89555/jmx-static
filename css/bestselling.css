@@ -1,0 +1,80 @@
+main .banner-box {
+  width: 100%;
+  height: 753px;
+  overflow: hidden;
+}
+main .banner-box .banner-item {
+  position: relative;
+  width: 1920px;
+  left: 50%;
+  margin-left: -960px;
+}
+main .best-selling-list {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+main .best-selling-list > .product {
+  width: 1200px;
+  height: 460px;
+  overflow: hidden;
+}
+main .best-selling-list > .product > div {
+  box-sizing: border-box;
+  width: 600px;
+  height: 460px;
+}
+main .best-selling-list > .product > div.product-img {
+  padding: 30px 100px;
+}
+main .best-selling-list > .product > div.product-img img {
+  width: 400px;
+  height: 400px;
+}
+main .best-selling-list > .product > div.content {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0 20px;
+  padding-top: 100px;
+}
+main .best-selling-list > .product > div.content > .title {
+  font-size: 30px;
+  color: #881d27;
+  padding: 10px 20px;
+}
+main .best-selling-list > .product > div.content > .sub {
+  font-size: 24px;
+  color: #222222;
+  padding: 10px 0;
+}
+main .best-selling-list > .product > div.content > .detail {
+  font-size: 16px;
+  color: #888888;
+  padding: 10px;
+}
+main .best-selling-list > .product.left > div {
+  float: left;
+}
+main .best-selling-list > .product.right > div {
+  float: right;
+}
+main .btn-group {
+  text-align: center;
+  margin-top: 20px;
+}
+main .btn-group a.btn {
+  display: inline-block;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #666666;
+  color: #666666;
+}
+main .btn-group a.btn:hover {
+  background-color: #dcdcdc;
+}
+main .btn-group a.btn:active {
+  background-color: #b2b2b2;
+}
