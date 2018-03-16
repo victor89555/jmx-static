@@ -3,7 +3,7 @@ main .banner-box {
   height: 789px;
   overflow: hidden;
 }
-main .banner-box .banner-item {
+main .banner-box .swiper-container {
   position: relative;
   width: 1920px;
   left: 50%;

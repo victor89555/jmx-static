@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
-    
+    <link rel="stylesheet" href="../css/swiper.css">
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
@@ -77,11 +77,17 @@
 <main class="container-fluid">
     <!-- Banner -->
     <div class="banner-box">
-        <div class="banner-item">
-            <img src="../img/banner1.png">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../img/banner01.png"></div>
+                <div class="swiper-slide"><img src="../img/banner02.png"></div>
+                <div class="swiper-slide"><img src="../img/banner03.png"></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
         </div>
     </div>
-    
+
     <!-- Four Series -->
     <div class="four-series container">
         <div class="title-style1">
@@ -192,6 +198,27 @@
 <script src="../js/vendor/jquery.min.js"></script>
 <script src="../js/header.js"></script>
 <script src="../js/footer.js"></script>
+<script src="../js/vendor/swiper.js"></script>
 
+<script>
+    $(document).ready(function(){
+        var JMXSwiper = new Swiper ('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            effect : 'fade',
+            speed: 3000,
+            autoplay: {
+                delay: 5000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+                waitForTransition: true,
+            },
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        })
+    })
+</script>
 </body>
 </html>
