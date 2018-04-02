@@ -5,7 +5,7 @@ header {
 header nav {
   width: 1200px;
   margin: 0 auto;
-  padding: 16px 0 14px;
+  padding-top: 16px;
 }
 header nav::before {
   display: table;
@@ -21,6 +21,7 @@ header nav .logo {
   float: left;
   width: 130px;
   height: 100px;
+  margin-bottom: 14px;
 }
 header nav .logo .logoImg {
   display: inline-block;
@@ -41,6 +42,7 @@ header nav .navbar .navitem {
   text-align: center;
   color: #5f5f5f;
   position: relative;
+  padding-bottom: 50px;
 }
 header nav .navbar .navitem.active > a {
   display: inline-block;
@@ -58,34 +60,15 @@ header nav .navbar .navitem > a {
 header nav .navbar .navitem > a:hover {
   color: #881d27;
 }
-header nav .navbar .navitem > a:hover::after {
-  display: block;
-  content: '';
-  width: 0;
-  height: 0;
-  border: 12px solid transparent;
-  border-bottom-color: #881d27;
-  position: absolute;
-  left: 50%;
-  margin-left: -12px;
-  bottom: -52px;
-}
 header nav .navbar .navitem > a .cn {
   font-size: 16px;
+  height: 23px;
+  line-height: 23px;
 }
 header nav .navbar .navitem > a .en {
   font-size: 12px;
-}
-header nav .navbar .navitem .sub-nav {
-  position: absolute;
-  height: 40px;
-  line-height: 40px;
-  font-size: 16px;
-  width: auto;
-  display: none;
-}
-header nav .navbar .navitem .sub-nav li.subnavitem {
-  float: left;
+  height: 17px;
+  line-height: 17px;
 }
 header nav .navbar .navitem + .navitem > a {
   border-left: 1px dashed #5f5f5f;
@@ -131,6 +114,10 @@ header nav .searchbox .search-btn {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   box-sizing: border-box;
+  border-width: 0px;
+  border-style: outset;
+  border-color: buttonface;
+  border-image: initial;
 }
 header .sub-navbar {
   height: 0px;

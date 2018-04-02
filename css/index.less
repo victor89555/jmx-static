@@ -12,7 +12,7 @@ main {
         }
     }
 
-    .four-series {
+    .four-series-dark {
         margin-bottom: 20px;
         .series {
             .series-item {
@@ -76,12 +76,63 @@ main {
         }
     }
 
+    .four-series-light {
+        margin-bottom: 20px;
+        .series {
+            .series-item {
+                display: block;
+                float: left;
+                width: 300px;
+
+                &>.imgbox {
+                    width: 300px;
+                    height: 317px;
+                    overflow: hidden;
+                    &>img {
+                        width: 300px;
+                        height: 317px;
+                        transition: transform 0.25s;
+                    }
+                }
+
+                &>p {
+                    text-align: center;
+                    &.title{
+                        height: 40px;
+                        line-height: 40px;
+                        font-size: 24px;
+                        color: #333333;
+                    }
+                    &.detail {
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 18px;
+                        color: #888888;
+                    }
+                }
+
+                &:hover {
+                    &>.imgbox {
+                        &>img {
+                            transform: scale(1.1,1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .brand-news {
         margin-bottom: 80px;
         .content {
             .photo {
                 float: left;
                 width: 660px;
+                height: 392px;
+                img {
+                    width: 660px;
+                    height: 392px;
+                }
             }
             .title-list {
                 float: left;
@@ -93,10 +144,12 @@ main {
                     height: 29px;
                     line-height: 29px;
                     position: relative;
+
                     a:hover {text-decoration: underline;}
                     &.active {
                         font-size: 22px;
                         a { color: #881d27;}
+                        white-space:nowrap;
 
                         &::before {
                             display: inline-block;

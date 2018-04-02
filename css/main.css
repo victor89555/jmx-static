@@ -11,7 +11,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  font-family: '微软雅黑';
+  font-family: STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑";
 }
 /*
  * Remove text-shadow in selection highlight:

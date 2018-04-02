@@ -5,7 +5,7 @@ header {
     nav {
         width: 1200px;
         margin: 0 auto;
-        padding: 16px 0 14px;
+        padding-top: 16px;
 
         &::before {
             display: table;
@@ -24,6 +24,7 @@ header {
             float: left;
             width: 130px;
             height: 100px;
+            margin-bottom: 14px;
 
             .logoImg {
                 display: inline-block;
@@ -46,6 +47,7 @@ header {
                 text-align: center;
                 color: #5f5f5f;
                 position: relative;
+                padding-bottom: 50px;
 
                 &.active {
                     &>a {
@@ -67,40 +69,45 @@ header {
                     &:hover {
                         color: #881d27;
 
-                        &::after {
-                            display: block;
-                            content: '';
-                            width: 0;
-                            height: 0;
-                            border: 12px solid transparent;
-                            border-bottom-color: #881d27;
-                            position: absolute;
-                            left: 50%;
-                            margin-left: -12px;
-                            bottom: -52px;
-                        }
+                        //&::after {
+                        //    display: block;
+                        //    content: '';
+                        //    width: 0;
+                        //    height: 0;
+                        //    border: 12px solid transparent;
+                        //    border-bottom-color: #881d27;
+                        //    position: absolute;
+                        //    left: 50%;
+                        //    margin-left: -12px;
+                        //    bottom: 0px;
+                        //}
                     }
                     .cn {
                         font-size: 16px;
+                        height: 23px;
+                        line-height: 23px;
                     }
                     .en {
                         font-size: 12px;
+                        height: 17px;
+                        line-height: 17px;
                     }
 
                 }
 
-                .sub-nav {
-                    position: absolute;
-                    height: 40px;
-                    line-height: 40px;
-                    font-size: 16px;
-                    width: auto;
-                    display: none;
-
-                    li.subnavitem {
-                        float: left;
-                    }
-                }
+                //ul.subitem {
+                //    position: absolute;
+                //    bottom: 0;
+                //    height: 40px;
+                //    line-height: 40px;
+                //    font-size: 16px;
+                //    width: auto;
+                //    display: none;
+                //
+                //    li {
+                //        float: left;
+                //    }
+                //}
 
                 &+.navitem {
                     &>a {
@@ -152,6 +159,10 @@ header {
                 border-top-right-radius: 5px;
                 border-bottom-right-radius: 5px;
                 box-sizing: border-box;
+                border-width: 0px;
+                border-style: outset;
+                border-color: buttonface;
+                border-image: initial;
             }
         }
     }

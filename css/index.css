@@ -9,10 +9,10 @@ main .banner-box .swiper-container {
   left: 50%;
   margin-left: -960px;
 }
-main .four-series {
+main .four-series-dark {
   margin-bottom: 20px;
 }
-main .four-series .series .series-item {
+main .four-series-dark .series .series-item {
   display: block;
   float: left;
   width: 299px;
@@ -22,50 +22,86 @@ main .four-series .series .series-item {
   background-position: center;
   background-repeat: no-repeat;
 }
-main .four-series .series .series-item.series1 {
+main .four-series-dark .series .series-item.series1 {
   background-image: url("../img/series1.png");
 }
-main .four-series .series .series-item.series2 {
+main .four-series-dark .series .series-item.series2 {
   background-image: url("../img/series2.png");
 }
-main .four-series .series .series-item.series3 {
+main .four-series-dark .series .series-item.series3 {
   background-image: url("../img/series3.png");
 }
-main .four-series .series .series-item.series4 {
+main .four-series-dark .series .series-item.series4 {
   background-image: url("../img/series4.png");
 }
-main .four-series .series .series-item > div {
+main .four-series-dark .series .series-item > div {
   width: 100%;
   height: 100%;
   transition: all linear 0.25s;
   position: relative;
 }
-main .four-series .series .series-item > div > p {
+main .four-series-dark .series .series-item > div > p {
   width: 299px;
   position: absolute;
   text-align: center;
   color: rgba(255, 255, 255, 0.4);
   transition: color linear 0.25s;
 }
-main .four-series .series .series-item > div > p.title {
+main .four-series-dark .series .series-item > div > p.title {
   width: 100%;
   height: 40px;
   line-height: 40px;
   font-size: 24px;
   bottom: 42px;
 }
-main .four-series .series .series-item > div > p.detail {
+main .four-series-dark .series .series-item > div > p.detail {
   width: 100%;
   height: 26px;
   line-height: 26px;
   font-size: 16px;
   bottom: 16px;
 }
-main .four-series .series .series-item:hover > div {
+main .four-series-dark .series .series-item:hover > div {
   background-color: rgba(0, 0, 0, 0.4);
 }
-main .four-series .series .series-item:hover > div > p {
+main .four-series-dark .series .series-item:hover > div > p {
   color: rgba(255, 255, 255, 0.9);
+}
+main .four-series-light {
+  margin-bottom: 20px;
+}
+main .four-series-light .series .series-item {
+  display: block;
+  float: left;
+  width: 300px;
+}
+main .four-series-light .series .series-item > .imgbox {
+  width: 300px;
+  height: 317px;
+  overflow: hidden;
+}
+main .four-series-light .series .series-item > .imgbox > img {
+  width: 300px;
+  height: 317px;
+  transition: transform 0.25s;
+}
+main .four-series-light .series .series-item > p {
+  text-align: center;
+}
+main .four-series-light .series .series-item > p.title {
+  height: 40px;
+  line-height: 40px;
+  font-size: 24px;
+  color: #333333;
+}
+main .four-series-light .series .series-item > p.detail {
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+  color: #888888;
+}
+main .four-series-light .series .series-item:hover > .imgbox > img {
+  transform: scale(1.1, 1.1);
 }
 main .brand-news {
   margin-bottom: 80px;
@@ -73,6 +109,11 @@ main .brand-news {
 main .brand-news .content .photo {
   float: left;
   width: 660px;
+  height: 392px;
+}
+main .brand-news .content .photo img {
+  width: 660px;
+  height: 392px;
 }
 main .brand-news .content .title-list {
   float: left;
@@ -91,6 +132,7 @@ main .brand-news .content .title-list > li a:hover {
 }
 main .brand-news .content .title-list > li.active {
   font-size: 22px;
+  white-space: nowrap;
 }
 main .brand-news .content .title-list > li.active a {
   color: #881d27;

@@ -22,31 +22,49 @@
     <nav class="clearfix">
         <div class="logo"><a href="#" class="logoImg"></a></div>
         <ul class="navbar">
-            <li class="navitem active">
-                <a href="javascript:;"><p class="cn">走进金美相</p><p class="en">ABOUT KIMISOI</p></a>
+            <li class="navitem noempty active">
+                <a href="javascript:;">
+                    <p class="cn">走进金美相</p>
+                    <p class="en">ABOUT KIMISOI</p>
+                </a>
             </li>
-            <li class="navitem">
-                <a href="javascript:;"><p class="cn">美相护肤</p><p class="en">SKIN CARE</p></a>
+            <li class="navitem noempty">
+                <a href="javascript:;">
+                    <p class="cn">美相护肤</p>
+                    <p class="en">SKIN CARE</p>
+                </a>
             </li>
-            <li class="navitem">
-                <a href="javascript:;"><p class="cn">畅销榜单</p><p class="en">SELL LIST</p></a>
+            <li class="navitem empty">
+                <a href="javascript:;">
+                    <p class="cn">畅销榜单</p>
+                    <p class="en">SELL LIST</p>
+                </a>
             </li>
-            <li class="navitem">
-                <a href="javascript:;"><p class="cn">美相地图</p><p class="en">MAPS</p></a>
+            <li class="navitem empty">
+                <a href="javascript:;">
+                    <p class="cn">美相地图</p>
+                    <p class="en">MAPS</p>
+                </a>
             </li>
-            <li class="navitem">
-                <a href="javascript:;"><p class="cn">在线查询</p><p class="en">ONLINE</p></a>
+            <li class="navitem noempty">
+                <a href="javascript:;">
+                    <p class="cn">在线查询</p>
+                    <p class="en">ONLINE</p>
+                </a>
             </li>
-            <li class="navitem">
-                <a href="javascript:;"><p class="cn">加入我们</p><p class="en">JOIN US</p></a>
+            <li class="navitem empty">
+                <a href="javascript:;">
+                    <p class="cn">加入我们</p>
+                    <p class="en">JOIN US</p>
+                </a>
             </li>
         </ul>
-        <div class="searchbox">
+        <form class="searchbox"method="post">
             <div class="search-content">
-                <input type="text" placeholder="雪颜静容膏">
+                <input type="text" name="keywords" placeholder="">
             </div>
-            <a href="javascript:;" class="search-btn">搜索</a>
-        </div>
+            <button type="submit" class="search-btn">搜索</button>
+        </form>
     </nav>
     <div id="sub-navbar" class="sub-navbar">
         <ul class="container">
@@ -60,16 +78,13 @@
                 <a href="javascript:;">马卡龙系列</a>
                 <a href="javascript:;">彩妆系列</a>
             </li>
-            <li class="subitem i3">
-            </li>
-            <li class="subitem i4">
-            </li>
+            <li class="subitem i3"></li>
+            <li class="subitem i4"></li>
             <li class="subitem i5">
                 <a href="javascript:;">代理查询</a>
                 <a href="javascript:;">正品查询</a>
             </li>
-            <li class="subitem i6">
-            </li>
+            <li class="subitem i6"></li>
         </ul>
     </div>
 </header>
@@ -79,9 +94,9 @@
     <div class="banner-box">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="../img/banner01.png"></div>
-                <div class="swiper-slide"><img src="../img/banner02.png"></div>
-                <div class="swiper-slide"><img src="../img/banner03.png"></div>
+                <div class="swiper-slide"><img src="../img/banner02.jpg"></div>
+                <div class="swiper-slide"><img src="../img/banner03.jpg"></div>
+                <div class="swiper-slide"><img src="../img/banner04.jpg"></div>
             </div>
             <!-- 如果需要分页器 -->
             <div class="swiper-pagination"></div>
@@ -89,7 +104,42 @@
     </div>
 
     <!-- Four Series -->
-    <div class="four-series container">
+    <!--<div class="four-series-dark container">-->
+        <!--<div class="title-style1">-->
+            <!--<div class="title">-->
+                <!--<p class="title-cn">四大系列</p>-->
+                <!--<p class="title-en">Four Series</p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="series container">-->
+            <!--<a href="javascript:;" class="series-item series1">-->
+                <!--<div>-->
+                    <!--<p class="title">马卡龙系列</p>-->
+                    <!--<p class="detail">甜甜的味道，引人遐想</p>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<a href="javascript:;" class="series-item series2">-->
+                <!--<div>-->
+                    <!--<p class="title">花仙系列</p>-->
+                    <!--<p class="detail">与花仙零距离接触</p>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<a href="javascript:;" class="series-item series3">-->
+                <!--<div>-->
+                    <!--<p class="title">雪颜系列</p>-->
+                    <!--<p class="detail">深层补水，令肌肤洁白透洁</p>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<a href="javascript:;" class="series-item series4">-->
+                <!--<div>-->
+                    <!--<p class="title">花仙系列</p>-->
+                    <!--<p class="detail">让你的美更加夺目</p>-->
+                <!--</div>-->
+            <!--</a>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <div class="four-series-light container">
         <div class="title-style1">
             <div class="title">
                 <p class="title-cn">四大系列</p>
@@ -98,28 +148,24 @@
         </div>
         <div class="series container">
             <a href="javascript:;" class="series-item series1">
-                <div>
-                    <p class="title">马卡龙系列</p>
-                    <p class="detail">甜甜的味道，引人遐想</p>
-                </div>
+                <div class="imgbox"><img src="../img/series1.jpg"></div>
+                <p class="title">马卡龙系列</p>
+                <p class="detail">甜甜的味道，引人遐想</p>
             </a>
             <a href="javascript:;" class="series-item series2">
-                <div>
-                    <p class="title">花仙系列</p>
-                    <p class="detail">与花仙零距离接触</p>
-                </div>
+                <div class="imgbox"><img src="../img/series2.jpg"></div>
+                <p class="title">花仙系列</p>
+                <p class="detail">与花仙零距离接触</p>
             </a>
             <a href="javascript:;" class="series-item series3">
-                <div>
-                    <p class="title">雪颜系列</p>
-                    <p class="detail">深层补水，令肌肤洁白透洁</p>
-                </div>
+                <div class="imgbox"><img src="../img/series3.jpg"></div>
+                <p class="title">雪颜系列</p>
+                <p class="detail">深层补水，令肌肤洁白透洁</p>
             </a>
             <a href="javascript:;" class="series-item series4">
-                <div>
-                    <p class="title">花仙系列</p>
-                    <p class="detail">让你的美更加夺目</p>
-                </div>
+                <div class="imgbox"><img src="../img/series4.jpg"></div>
+                <p class="title">花仙系列</p>
+                <p class="detail">让你的美更加夺目</p>
             </a>
         </div>
     </div>
@@ -208,7 +254,7 @@
             effect : 'fade',
             speed: 3000,
             autoplay: {
-                delay: 5000,
+                delay: 3000,
                 stopOnLastSlide: false,
                 disableOnInteraction: false,
                 waitForTransition: true,
@@ -217,6 +263,10 @@
             pagination: {
                 el: '.swiper-pagination',
             },
+        })
+
+        $('.news-box .title-list').on('mouseover','li[class!="more"]',function(e){
+            $(this).addClass('active').siblings().removeClass('active')
         })
     })
 </script>
