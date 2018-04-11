@@ -1,4 +1,5 @@
 main .the-brand-footprint > .item {
+  position: relative;
   display: block;
   width: 350px;
   height: 420px;
@@ -8,13 +9,31 @@ main .the-brand-footprint > .item {
 main .the-brand-footprint > .item:nth-child(3n) {
   margin-right: 0;
 }
-main .the-brand-footprint > .item .item-img {
+main .the-brand-footprint > .item .item-img,
+main .the-brand-footprint > .item .video-img {
+  position: relative;
   width: 350px;
-  height: 260px;
+  height: 230px;
 }
-main .the-brand-footprint > .item .item-img img {
+main .the-brand-footprint > .item .item-img img,
+main .the-brand-footprint > .item .video-img img {
   width: 350px;
-  height: 260px;
+  height: 230px;
+}
+main .the-brand-footprint > .item a.video-img:hover::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-image: url("../img/play.png");
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -40px;
 }
 main .the-brand-footprint > .item .item-title {
   margin-top: 30px;
@@ -57,4 +76,24 @@ main .page-list > p a {
 }
 main .page-list > p a:hover {
   text-decoration: underline;
+}
+main .vedio-view {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3000;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+main .vedio-view .vedio {
+  position: absolute;
+  width: 1200px;
+  height: 614px;
+  top: 50%;
+  left: 50%;
+  margin-top: -307px;
+  margin-left: -600px;
+  z-index: 3001;
 }

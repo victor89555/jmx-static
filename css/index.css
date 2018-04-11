@@ -109,11 +109,15 @@ main .brand-news {
 main .brand-news .content .photo {
   float: left;
   width: 660px;
+  text-align: center;
   height: 392px;
+  line-height: 392px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 main .brand-news .content .photo img {
-  width: 660px;
-  height: 392px;
+  max-width: 660px;
+  max-height: 392px;
 }
 main .brand-news .content .title-list {
   float: left;
@@ -155,20 +159,86 @@ main .brand-news .content .title-list > li.more {
 main .vedio-about-jmx {
   margin-bottom: 108px;
 }
-main .vedio-about-jmx .vedio-box {
+main .vedio-about-jmx .main .vedio-box {
   width: 1200px;
   height: 614px;
-  cursor: pointer;
+}
+main .vedio-about-jmx .main .vedio-box::after {
+  width: 120px;
+  height: 120px;
+  margin-top: -60px;
+  margin-left: -60px;
+}
+main .vedio-about-jmx .main .vedio-box .vedio-pic {
+  width: 1200px;
+  height: 614px;
+}
+main .vedio-about-jmx .sub {
+  margin-top: 12px;
+}
+main .vedio-about-jmx .sub .vedio-box {
+  float: left;
+  width: 392px;
+  height: 210px;
+}
+main .vedio-about-jmx .sub .vedio-box::after {
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+main .vedio-about-jmx .sub .vedio-box .vedio-pic {
+  width: 392px;
+  height: 210px;
+}
+main .vedio-about-jmx .sub .vedio-box + .vedio-box {
+  margin-left: 12px;
+}
+main .vedio-about-jmx .main a.vedio-box,
+main .vedio-about-jmx .sub a.vedio-box {
+  position: relative;
+}
+main .vedio-about-jmx .main a.vedio-box::after,
+main .vedio-about-jmx .sub a.vedio-box::after {
+  content: '';
+  display: none;
+  background-image: url("../img/play.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+main .vedio-about-jmx .main a.vedio-box:hover::after,
+main .vedio-about-jmx .sub a.vedio-box:hover::after {
+  display: block;
 }
 main .vedio-about-jmx .vedio-view {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 3000;
+  background-color: rgba(0, 0, 0, 0.8);
 }
-main .vedio-about-jmx .vedio-view vedio {
+main .vedio-about-jmx .vedio-view .vedio {
   position: absolute;
+  width: 1200px;
+  height: 614px;
+  top: 50%;
+  left: 50%;
+  margin-top: -307px;
+  margin-left: -600px;
   z-index: 3001;
+}
+main .vedio-about-jmx .more {
+  margin-top: 16px;
+  font-size: 16px;
+  text-align: right;
+}
+main .vedio-about-jmx .more a:hover {
+  text-decoration: underline;
 }

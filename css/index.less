@@ -128,10 +128,14 @@ main {
             .photo {
                 float: left;
                 width: 660px;
+                text-align: center;
                 height: 392px;
+                line-height: 392px;
+                position: relative;
+                background-color: rgba(0,0,0,0.2);
                 img {
-                    width: 660px;
-                    height: 392px;
+                    max-width: 660px;
+                    max-height: 392px;
                 }
             }
             .title-list {
@@ -174,22 +178,92 @@ main {
 
     .vedio-about-jmx {
         margin-bottom: 108px;
-        .vedio-box {
-            width: 1200px;
-            height: 614px;
-            cursor: pointer;
+
+        .main{
+            .vedio-box {
+                &::after{
+                    width: 120px;
+                    height: 120px;
+                    margin-top: -60px;
+                    margin-left: -60px;
+                }
+                width: 1200px;
+                height: 614px;
+                .vedio-pic {
+                    width: 1200px;
+                    height: 614px;
+                }
+            }
         }
+        .sub{
+            margin-top: 12px;
+            .vedio-box {
+                &::after{
+                    width:60px;
+                    height: 60px;
+                    margin-top: -30px;
+                    margin-left: -30px;
+                }
+                float: left;
+                width: 392px;
+                height: 210px;
+                .vedio-pic {
+                    width: 392px;
+                    height: 210px;
+                }
+                &+.vedio-box{
+                    margin-left: 12px;
+                }
+            }
+        }
+        .main,.sub{
+            a.vedio-box{
+                position: relative;
+                &::after{
+                    content: '';
+                    display: none;
+                    background-image: url("../img/play.png");
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    background-position: center;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                }
+            }
+            a.vedio-box:hover {
+                &::after{
+                    display: block;
+                }
+            }
+        }
+
         .vedio-view {
+            display: none;
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
             z-index: 3000;
-            vedio {
+            background-color: rgba(0,0,0,0.8);
+            .vedio {
                 position: absolute;
+                width: 1200px;
+                height: 614px;
+                top: 50%;
+                left: 50%;
+                margin-top: -307px;
+                margin-left: -600px;
                 z-index: 3001;
             }
+        }
+
+        .more{
+            margin-top: 16px;
+            font-size: 16px;
+            text-align: right;
+            a:hover {text-decoration: underline;}
         }
     }
 }

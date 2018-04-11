@@ -180,19 +180,37 @@
         </div>
         <div class="news-box container">
             <div class="content">
-                <div class="photo">
-                    <img src="../img/index-img1.png">
+                <div id="photoBox" class="photo">
+                    <!--<img id="photoImg" src="../img/series1.jpg">-->
                 </div>
                 <ul class="title-list">
-                    <li><a href="javascript:;">KIMISOI金美相亚洲市场受捧亚太杰出品牌认证</a></li>
-                    <li class="active"><a href="javascript:;">金美相深圳颁奖优秀代理 密训福利享不停</a></li>
-                    <li><a href="javascript:;">金美相强势入驻实体店 品牌实力不容小觑</a></li>
-                    <li><a href="javascript:;">金美相牵手环球华夏小姐 掀起一场美与美的碰撞</a></li>
-                    <li><a href="javascript:;">明星产品在《美丽俏佳人》中曝光</a></li>
-                    <li><a href="javascript:;">独家特约安徽卫视《美丽救兵》</a></li>
-                    <li><a href="javascript:;">深圳卫视《时尚美妆》栏目明星御用造型师李春楠老师推荐</a></li>
-                    <li><a href="javascript:;">四川卫视《心动女人帮》强烈推荐</a></li>
-                    <li class="more"><a href="javascript:;">更多新闻>>></a></li>
+                    <li data-url="../img/series1.jpg">
+                        <a href="javascript:;">KIMISOI金美相亚洲市场受捧亚太杰出品牌认证</a>
+                    </li>
+                    <li data-url="../img/img1.png" class="active">
+                        <a href="javascript:;">金美相深圳颁奖优秀代理 密训福利享不停</a>
+                    </li>
+                    <li data-url="../img/star-product-makalong1.jpg">
+                        <a href="javascript:;">金美相强势入驻实体店 品牌实力不容小觑</a>
+                    </li>
+                    <li data-url="../img/img3.png">
+                        <a href="javascript:;">金美相牵手环球华夏小姐 掀起一场美与美的碰撞</a>
+                    </li>
+                    <li data-url="../img/series3.png">
+                        <a href="javascript:;">明星产品在《美丽俏佳人》中曝光</a>
+                    </li>
+                    <li data-url="../img/index-img1.png">
+                        <a href="javascript:;">独家特约安徽卫视《美丽救兵》</a>
+                    </li>
+                    <li data-url="../img/picture.png">
+                        <a href="javascript:;">深圳卫视《时尚美妆》栏目明星御用造型师李春楠老师推荐</a>
+                    </li>
+                    <li data-url="../img/video1.png">
+                        <a href="javascript:;">四川卫视《心动女人帮》强烈推荐</a>
+                    </li>
+                    <li class="more">
+                        <a href="javascript:;">更多新闻>>></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -201,7 +219,29 @@
     <!-- Vedio About JMX -->
     <div class="vedio-about-jmx container">
         <!--<img src="../img/video1.png" class="vedio-box">-->
-        <iframe height=614 width=1200 src='http://player.youku.com/embed/XMTI2MDkzNDEwOA==' frameborder=0 allowfullscreen></iframe>
+        <!--<iframe height=614 width=1200 src='http://player.youku.com/embed/XMTI2MDkzNDEwOA==' frameborder=0 allowfullscreen></iframe>-->
+        <div class="main clearfix">
+            <a href="javascript:;" class="vedio-box" data-url="http://player.youku.com/embed/XMTI2MDkzNDEwOA==">
+                <img src="../img/video1.png" class="vedio-pic">
+            </a>
+        </div>
+        <div class="sub clearfix">
+            <a href="javascript:;" class="vedio-box" data-url="https://v.qq.com/iframe/player.html?vid=o0174vy7uk6&tiny=0">
+                <img src="../img/video1.png" class="vedio-pic">
+            </a>
+            <a href="javascript:;" class="vedio-box" data-url="https://v.qq.com/iframe/player.html?vid=d0184lzri8r&tiny=0">
+                <img src="../img/video1.png" class="vedio-pic">
+            </a>
+            <a href="javascript:;" class="vedio-box" data-url="https://v.qq.com/iframe/player.html?vid=j0158aedpz1&tiny=0">
+                <img src="../img/video1.png" class="vedio-pic">
+            </a>
+        </div>
+        <div id="vedio-view" class="vedio-view">
+            <div class="vedio">
+                <iframe id="vedio-view-iframe" height=614 width=1200 src='' frameborder=0 allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="more" ><a href="javascript:;">更多视频>>></a></div>
     </div>
 </main>
 
@@ -263,12 +303,49 @@
             pagination: {
                 el: '.swiper-pagination',
             },
-        })
+        });
 
-        $('.news-box .title-list').on('mouseover','li[class!="more"]',function(e){
-            $(this).addClass('active').siblings().removeClass('active')
+        var $li = $('.news-box .title-list li[class!="more"]');
+        var $photoBox = $('#photoBox');
+        var W = parseFloat($photoBox.width());
+        var H = parseFloat($photoBox.height());
+        $li.map(function(){
+            var img = document.createElement("img");
+            img.src = $(this).attr('data-url');
+            var w = parseFloat(img.width);
+            var h = parseFloat(img.height);
+            img.style.display = 'none';
+            if(W/H > w/h){
+                img.style.width = W + 'px';
+            }else {
+                img.style.height = H + 'px';
+            }
+            $photoBox.append(img);
         })
-    })
+        actIdx(0);
+        $('.news-box .title-list').on('mouseover','li[class!="more"]',function(e){
+            actIdx($li.index($(this)));
+        })
+        function actIdx(idx){
+            var $eq = $li.eq(idx);
+            var $img = $photoBox.children('img').eq(idx);
+            console.log($img[0]);
+            $img.show().siblings().hide();
+            $eq.addClass('active').siblings().removeClass('active');
+        }
+
+
+        //点击打开视频
+        $('.vedio-box').on('click',function(){
+            var url = $(this).attr('data-url');
+            $('#vedio-view-iframe')[0].src = url;
+            $('#vedio-view').show();
+        });
+        $('#vedio-view').on('click',function(){
+            $('#vedio-view-iframe')[0].src = ''
+            $(this).hide();
+        });
+    });
 </script>
 </body>
 </html>
